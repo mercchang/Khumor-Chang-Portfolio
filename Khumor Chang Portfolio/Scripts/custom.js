@@ -66,7 +66,7 @@ $("#fbuzzbtn").click(function () {
 });
 
 /*          NUMBERS ONLY           */
-$("#fbuzz1, #fbuzz2").keypress(function (e) {
+$("#fbuzz1, #fbuzz2, #factbtn, #Sumbtn").keypress(function (e) {
     if (! (e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
         return false;
     }
@@ -86,11 +86,6 @@ $("#palbtn").click(function () {
     } else {
         $("#resultpal").text(pal + " is not a palindrome.");
     }
-    
-});
-
-/*          SHOW CODE           */
-$("#showCode").click(function () {
     
 });
 
@@ -124,3 +119,17 @@ $("#clearpal").click(function () {
     $("#palinput").val("");
     $("#resultpal").text("");
 });
+
+//SMTP JS - for emails
+$("#emailsubmit").click(function () {
+    Email.send({
+        SecureToken: "ba25689c-f0aa-4486-b386-11e87131022b",
+        To: 'mercchang@gmail.com',
+        From: $("#fromEmail").val(),
+        Subject: $("#emailSubject").val(),
+        Body: "<h6>From: " + $("#name").val() + ",</h6>" + "<br />" + $("#emailMsg").val()
+    }).then(
+        message => alert("Email Sent!")
+);
+});
+

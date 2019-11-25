@@ -98,11 +98,11 @@
 
                     </div>
                     <div class="row pt-3">
-                        <img class="img-fluid px-3" src="Images/badges/c.png" />
-                        <img class="img-fluid px-3" src="Images/badges/html5.png" />
-                        <img class="img-fluid px-3" src="Images/badges/mvc.png" />
-                        <img class="img-fluid px-3" src="Images/badges/sql.png" />
-                        <img class="img-fluid px-3" src="Images/badges/vs.png" />
+                        <img class="img-fluid px-3" src="Images/badges/c.png" width="100" />
+                        <img class="img-fluid px-3" src="Images/badges/html5.png" width="100" />
+                        <img class="img-fluid px-3" src="Images/badges/mvc.png" width="160" height="100" />
+                        <img class="img-fluid px-3" src="Images/badges/sql.png" width="100" />
+                        <img class="img-fluid px-3" src="Images/badges/vs.png" width="100" />
                     </div>
 
                 </div>
@@ -171,7 +171,6 @@
     </div>-->
     <!-- section coding challenges ---------------------------------------------------->
     <div id="portfolio" class="text-center paddsection" style="background-image: url('Images/back3.jpg');">
-
         <div class="container">
             <div class="section-title text-center">
                 <h2>Coding Challenges</h2>
@@ -238,24 +237,34 @@
     <!-- section portfolio ------------------------------------------------------------>
     <div id="test" class="paddsection" style="background-image: url('Images/back.jpg');">
         <div class="container">
-            <div class="row justify-content-between">
-
-                <div class="col-lg-4 ">
-                    <div class="div-img-bg">
-                        <div class="about-img">
-                            <img src="Images/me.jpg" class="img-responsive" alt="me">
+            <div class="section-title text-center">
+                <h2>Portfolio</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portfolio-container">
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
+                            <div id="portfoliotext">Bug Tracker</div>
+                            <a href="https://kcbugtracker.azurewebsites.net/">
+                                <img src="Images/2.jpg" alt="img">
+                            </a>
                         </div>
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
+                            <div id="portfoliotext">Bug Tracker</div>
+                            <a href="https://kcbugtracker.azurewebsites.net/">
+                                <img src="Images/2.jpg" alt="img">
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
+                            <div id="portfoliotext">Bug Tracker</div>
+                            <a href="https://kcbugtracker.azurewebsites.net/">
+                                <img src="Images/2.jpg" alt="img">
+                            </a>
+                        </div>
+
                     </div>
-                </div>
-
-                <div class="col-lg-7">
-                    <div class="about-descr">
-
-                        <p class="p-heading">SDFSDFSEFDF. </p>
-                        <p class="separator">fesafdaacaweawefesgfjugukfsaesdcffawefcasdfasfdcscdfe.</p>
-
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -361,34 +370,34 @@
 
                                 <div class="col-lg-6">
                                     <div class="form-group contact-block1">
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:2" data-msg="Please enter at least 2 characterss" />
                                         <div class="validation"></div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                        <input type="email" class="form-control" name="email" id="fromEmail" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                                         <div class="validation"></div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                        <input type="text" class="form-control" name="subject" id="emailSubject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                                         <div class="validation"></div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                        <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message" id="emailMsg"></textarea>
                                         <div class="validation"></div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-12">
-                                    <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                                    <input type="submit" class="btn btn-defeault btn-send" value="Send message" id="emailsubmit">
                                 </div>
 
                             </div>
@@ -598,13 +607,13 @@
                         });
                     </pre>
                 </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn" data-dismiss="modal">Close</button>
-                    </div>
-
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
                 </div>
+
             </div>
+        </div>
     </div>
 
     <!-------------------------------Math------------------------------------------>
@@ -760,7 +769,9 @@
     <!--Custom file-->
     <script src="Scripts/custom.js"></script>
 
-    <!-- End JavaScript Libraries ----------------------------------------------->
+    <!--Email-->
+    <script src="Scripts/smtp.js"></script>
+
     <!-- Syntax Highlighter-->
     <script type="text/javascript">
         SyntaxHighlighter.all();

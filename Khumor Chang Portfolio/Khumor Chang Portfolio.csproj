@@ -113,6 +113,7 @@
     <Content Include="Scripts\magnific-popup.min.js" />
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\owl.carousel.min.js" />
+    <Content Include="Scripts\smtp.js" />
     <Content Include="Scripts\SyntaxHighlighter\scripts\shBrushJScript.js" />
     <Content Include="Scripts\SyntaxHighlighter\scripts\shCore.js" />
     <Content Include="Content\SyntaxHighlighter\styles\shCoreFadeToGrey.css" />
