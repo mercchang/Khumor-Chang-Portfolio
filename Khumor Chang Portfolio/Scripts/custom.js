@@ -129,7 +129,7 @@ $("#emailsubmit").click(function () {
         Subject: $("#emailSubject").val(),
         Body: "<h6>From: " + $("#name").val() + ",</h6>" + "<br />" + $("#emailMsg").val()
     }).then(
-        message => alert("Email Sent!")
+        $("#sendmessage").addClass("show")
 );
 });
 
