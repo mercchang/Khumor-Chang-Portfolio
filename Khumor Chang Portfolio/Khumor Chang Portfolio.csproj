@@ -67,7 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\blog.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\hover.min.css" />
     <Content Include="Content\ionicons.min.css" />
@@ -76,11 +75,6 @@
     <Content Include="Content\responsive.css" />
     <Content Include="Content\style.css" />
     <Content Include="Images\1.jpg" />
-    <Content Include="Images\2.jpg" />
-    <Content Include="Images\3.jpg" />
-    <Content Include="Images\4.jpg" />
-    <Content Include="Images\5.jpg" />
-    <Content Include="Images\6.jpg" />
     <Content Include="Images\back.jpg" />
     <Content Include="Images\back2.jpg" />
     <Content Include="Images\back3.jpg" />
