@@ -30,9 +30,9 @@ body {
 
 .parallax {
     /* The image used */
-    background-image: url("../Images/homebg.jpg");
+    background: url("../Images/homebg.jpg") no-repeat center center fixed;
     /* Full height */
-    height: 100%;
+    background-size: auto 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -42,9 +42,9 @@ body {
 
 .parallax2 {
     /* The image used */
-    background-image: url("../Images/back3.jpg");
+    background: url("../Images/back3.jpg") no-repeat center center fixed;
     /* Full height */
-    height: 100%;
+    background-size: auto 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -54,14 +54,20 @@ body {
 
 .parallax3 {
     /* The image used */
-    background-image: url("../Images/back5.jpg");
+    background: url("../Images/back5.jpg") no-repeat center center fixed;
     /* Full height */
-    height: 100%;
+    background-size: auto 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax, .parallax2, .parallax3 {
+        background-attachment: scroll;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
