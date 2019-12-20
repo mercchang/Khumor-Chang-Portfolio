@@ -81,8 +81,10 @@
     <Content Include="Images\back4.jpg" />
     <Content Include="Images\back5.jpg" />
     <Content Include="Images\badges\c.png" />
+    <Content Include="Images\badges\css.png" />
     <Content Include="Images\badges\html5.png" />
     <Content Include="Images\badges\mvc.png" />
+    <Content Include="Images\badges\net.png" />
     <Content Include="Images\badges\sql.png" />
     <Content Include="Images\badges\vs.png" />
     <Content Include="Images\blog-post-1.jpg" />
@@ -95,6 +97,7 @@
     <Content Include="Images\img-numpad.jpg" />
     <Content Include="Images\img-pal.jpg" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\logo2.png" />
     <Content Include="Images\me.jpg" />
     <Content Include="index.html" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
